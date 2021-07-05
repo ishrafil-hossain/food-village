@@ -1,18 +1,21 @@
 body{
-    font-family: system-ui, system-ui, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 section{
     display: flex;
 }
 .half-width{
-    width: 40%;
-    padding: 10%;
+    width: 43%;
+    padding: 60px;
 }
 h1{
-    font-size: 60px;
+    font-size: 55px;
 }
-.spam-tag{
+.span-tag{
     color: orange;
+}
+.span-tag2{
+    color:rgb(83, 83, 83)
 }
 .order-button{
     text-decoration: none;
