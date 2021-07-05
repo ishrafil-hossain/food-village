@@ -1,0 +1,24 @@
+body{
+    font-family: system-ui, system-ui, sans-serif;
+}
+section{
+    display: flex;
+}
+.half-width{
+    width: 40%;
+    padding: 10%;
+}
+h1{
+    font-size: 60px;
+}
+.spam-tag{
+    color: orange;
+}
+.order-button{
+    text-decoration: none;
+    background-image: linear-gradient( tomato, orange);
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 40px;
+}
