@@ -2,7 +2,7 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
 }
-.heading-sec, .about-sec, .card-div, .vertical-card{
+.heading-sec, .about-sec, .recipe-card-div, .vertical-card{
     display: flex;
 }
 .half-width{
@@ -15,13 +15,13 @@ h1{
 h2{
     font-size: 40px;
 }
-.span-tag{
+.span-orange-color{
     color: orange;
 }
-.span-color{
+.span-black-color{
     color:rgb(83, 83, 83)
 }
-.order-button{
+.button{
     text-decoration: none;
     background-image: linear-gradient( tomato, orange);
     color: white;
@@ -30,30 +30,33 @@ h2{
     border-radius: 40px;
 }
 
-#about-me-img{
-    width: 61%;
-    padding-left: 130px;
-}
+
+/* About section style */
 .about-sec{
     background-image: url(images/shapes/7.png);
     background-repeat: no-repeat;
 }
+#about-me-img{
+    width: 61%;
+    padding-left: 130px;
+}
 
-.recipie-heading{
+/* Recipe Section style */
+.recipe-heading{
     width: 50%;
     padding-left: 25%;
     text-align: justify;
 }
-.recipie-heading h2{
+.recipe-heading h2{
     text-align: center;
 
 }
-.card-div{
+.recipe-card-div{
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
 }
-.card{
+.recipe-card{
     text-align: center; 
     box-shadow: 10px 10px 40px grey;
     height: 500px;
@@ -62,33 +65,30 @@ h2{
     padding: 10px;
     border-radius: 30px;
 }
-
-.card-div img{
+.recipe-card-div img{
     width: 100%;
     height: 60%;
 }
 
+
+/* vertical card style */
 .vertical-card{
     box-shadow: 10px 10px 40px grey;
     height: 200px;
     margin: 100px;
-    /* padding: 10px; */
     border-radius: 20px;
 }
 .vertical-card div{
     text-align: center;
     margin-left: 180px;
     margin-right: 10px;
-
 }
+.vertical-card div p{
+    margin: -50px;
+}
+
 
 /* Menu style */
-.menu-div{
-    display: flex;
-    width: 80%;
-    padding-left: 8%;
-    padding-right: 5%;
-}
 .menu-heading{
     width: 50%;
     padding-left: 25%;
@@ -97,6 +97,16 @@ h2{
 .menu-heading h2{
     text-align: center;
 }
+.menu-div{
+    display: flex;
+    width: 80%;
+    padding-left: 8%;
+    padding-right: 5%;
+}
+.menu-div img{
+    width: 100%;
+    height: 90%;
+}
 .menu-card{
     text-align: center; 
     box-shadow: 10px 10px 40px grey;
@@ -104,27 +114,22 @@ h2{
     margin-left: 70px;
     margin-right: 15px;
     padding: 10px;
-}
-.menu-card{
+
     border-left: 7px solid;
     border-image: linear-gradient(blue,tomato);
     border-image-slice: 1;
 }
-.menu-div img{
-    width: 100%;
-    height: 90%;
-}
 .menu-card h3{
     margin: -5px;
 }
+.more-button{
+    font-size: 25px;
+    color: green;
+    margin-left: 175px;
+}
+
 
 /* Kitchen Expert style */
-.kitchen-expert-div{
-    display: flex;
-    width: 75%;
-    padding-left: 18%;
-    padding-right: 5%;
-}
 .kitchen-expert-heading{
     width: 50%;
     padding-left: 25%;
@@ -134,6 +139,16 @@ h2{
     text-align: center;
 
 }
+.kitchen-expert-div{
+    display: flex;
+    width: 75%;
+    padding-left: 18%;
+    padding-right: 5%;
+}
+.kitchen-expert-div img{
+    width: 100%;
+    height: 90%;
+}
 .kitchen-expert-card{
     text-align: center; 
     box-shadow: 10px 10px 40px grey;
@@ -141,30 +156,18 @@ h2{
     margin-left: 70px;
     margin-right: 15px;
     padding: 10px;
-}
-.kitchen-expert-card{
-    border-left: 7px solid;
+
+    border-top: 7px solid;
+    border-bottom: 7px solid;
     border-image: linear-gradient(yellow, green);
     border-image-slice: 1;
 }
-.kitchen-expert-div img{
-    width: 100%;
-    height: 90%;
-}
-
 .kitchen-expert-card h3{
     margin: -5px;
 }
 
 
 /* send message style */
-.message-div{
-    display: flex;
-    width: 75%;
-    padding-left: 18%;
-    padding-right: 5%;
-}
-
 .message-heading{
     width: 50%;
     padding-left: 25%;
@@ -174,7 +177,16 @@ h2{
     text-align: center;
 
 }
-
+.message-div{
+    display: flex;
+    width: 75%;
+    padding-left: 18%;
+    padding-right: 5%;
+}
+.message-div img{
+    width: 100%;
+    height: 90%;
+}
 .message-card{
     text-align: center; 
     box-shadow: 10px 10px 40px grey;
@@ -183,18 +195,12 @@ h2{
     margin-left: 130px;
     margin-right: 15px;
     padding: 10px;
-}
-.message-card{
+
     border-left: 7px solid;
-    border-image: linear-gradient(yellow, green);
+    border-right: 7px solid;
+    border-image: linear-gradient(pink, gold);
     border-image-slice: 1;
 }
-
-.message-div img{
-    width: 100%;
-    height: 90%;
-}
-
 .message-card h3{
     margin: -5px;
 }
@@ -202,21 +208,16 @@ input, textarea{
     font-size: 15px;
     padding: 5px;
 }
-
-button{
+.send-button, .clear-button{
     margin: 10px;
     padding: 10px;
     width: 100px;
     font-size: 20px;
+    border-radius: 25px;
 }
 
 
-
-
-.vertical-card div p{
-    margin: -50px;
-}
-
+/* footer style */
 footer{
     width: 100%;
     background-color: black;
